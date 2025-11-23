@@ -38,7 +38,5 @@ public class Main {
         in.close(); //빨때를 뽑는다.
         out.close();
 
-
-
     }
 }
