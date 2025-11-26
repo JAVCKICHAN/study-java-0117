@@ -40,8 +40,10 @@ public class HttpTest {
                             HTTP/1.1 200 OK
                             Content-Type: text/html; charset=UTF-8
 
-                            Hello World
                             """;
+
+            //HTTP 본문을 서비스를 통해 랜덤하게 보내기
+            response += "<h1>"+WiseSayingService.INSTANCE.getOne()+"<h1>";
 
             //response를 byte의 배열로 바꾸기
             byte[] msgArr = response.getBytes();
