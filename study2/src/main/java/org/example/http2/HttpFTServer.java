@@ -33,6 +33,7 @@ public class HttpFTServer {
             //한 줄 한 줄 쓸 수 있다. \r\n 붙이기
             outputStream.write("HTTP/1.1 200 OK\r\n".getBytes());
             outputStream.write("Content-Type: image/png;\r\n".getBytes());
+            outputStream.write("Content-Length: 84907\r\n".getBytes());
             outputStream.write("\r\n".getBytes());
 
             //[변경] 파일 데이터를 읽어서 OutputStream에 write()한다.
